@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Remover</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .drop-zone {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            width: 80vw;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .drop-zone.dragover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div id="dropZone" class="drop-zone">
+        <h1>Background Remover</h1>
+        <form id="uploadForm" action="/" method="post" enctype="multipart/form-data">
+            <input id="fileInput" type="file" name="file" style="display: none;" required /> 
+            <input type="submit" value="Select an Image" />
+        </form>
+    </div>
+    
+    <script>
+        let dropZone = document.getElementById("dropZone");
+        let fileInput = document.getElementById("fileInput");
+        let uploadForm = document.getElementById("uploadForm");
+
+        // Trigger file input click when drop zone is clicked
+        dropZone.addEventListener("click", function () {
+            fileInput.click();
+        });
+
+        // Automatically submit the form when a file is selected
+        fileInput.addEventListener("change", function () {
+            if(fileInput.files.length > 0) {
+                uploadForm.submit();
+            }
+        });
+
+        // Add dragover event to change appearance when dragging file over drop zone
+        dropZone.addEventListener("dragover", function (e) {
+            e.preventDefault();
+            this.classList.add("dragover");
+        });
+
+        // Remove dragover appearance when file is no longer dragged over drop zone
+        dropZone.addEventListener("dragleave", function () {
+            this.classList.remove("dragover");
+        });
+
+        // Handle file drop
+        dropZone.addEventListener("drop", function (e) {
+            e.preventDefault();
+            this.classList.remove("dragover");
+
+            let file = e.dataTransfer.files[0];
+            if (file) {
+                fileInput.files = e.dataTransfer.files;
+                uploadForm.submit();
+            }
+        });
+    </script>
+</body>
+</html>
