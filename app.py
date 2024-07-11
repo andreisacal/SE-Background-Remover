@@ -23,7 +23,7 @@ def upload_file():
             img_io.seek(0)
             
             # Call the remove.bg API
-            api_key = 'r3MPp2TwSY8ANtRHU2sHs6Bc'
+            api_key = 'YOUR_API'
             response = requests.post(
                 'https://api.remove.bg/v1.0/removebg',
                 files={'image_file': img_io},
