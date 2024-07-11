@@ -1,11 +1,5 @@
 # Software Engineering Project for Background Removal
 
-<img width="1258" alt="web_app" src="https://github.com/andreisacal/SE-Background-Remover/assets/166915179/5d75d18e-1a79-418a-b0b5-636f071ed36b">
-
-![image_1](https://github.com/andreisacal/SE-Background-Remover/assets/166915179/1e48279e-f90e-4cca-8213-0b846979001d)
-
-![no_bg](https://github.com/andreisacal/SE-Background-Remover/assets/166915179/3554501c-1518-4b49-bdb4-8f1d72c15e00)
-
 🚀 Introduction:
 
 Welcome to the Background Removal project repository! This project focuses on developing a powerful web application for automatically removing backgrounds from images. Leveraging the Remove.bg API and advanced image processing techniques, this tool aims to provide users with a seamless and efficient way to enhance their photos.
@@ -30,3 +24,9 @@ As this project evolves, there are several avenues for enhancement and expansion
 🙏 Thank You
 
 Happy coding! 🌟
+
+<img width="1258" alt="web_app" src="https://github.com/andreisacal/SE-Background-Remover/assets/166915179/5d75d18e-1a79-418a-b0b5-636f071ed36b">
+
+![image_1](https://github.com/andreisacal/SE-Background-Remover/assets/166915179/1e48279e-f90e-4cca-8213-0b846979001d)
+
+![no_bg](https://github.com/andreisacal/SE-Background-Remover/assets/166915179/3554501c-1518-4b49-bdb4-8f1d72c15e00)
