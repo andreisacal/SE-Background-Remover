@@ -1,9 +1,7 @@
-![no_bg](https://github.com/andreisacal/SE-Background-Remover/assets/166915179/62762d1f-a8fe-49e9-b8e6-493f14f55e4f)# Software Engineering Project for Background Removal
+# Software Engineering Project for Background Removal
 
 <img width="1258" alt="web_app" src="https://github.com/andreisacal/SE-Background-Remover/assets/166915179/5d75d18e-1a79-418a-b0b5-636f071ed36b">
-
 ![image_1](https://github.com/andreisacal/SE-Background-Remover/assets/166915179/1e48279e-f90e-4cca-8213-0b846979001d)
-
 ![no_bg](https://github.com/andreisacal/SE-Background-Remover/assets/166915179/3554501c-1518-4b49-bdb4-8f1d72c15e00)
 
 🚀 Introduction:
